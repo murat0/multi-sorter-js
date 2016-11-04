@@ -1,27 +1,5 @@
 /*
-	tools.js - order();
-
-	====================
-	Multi-purpose sorter
-	====================
-
-	- Returns a sorted number array
-
-		let n = [ 3, 2, 1, 1.23, -1823, -2, 23, 4 ];
-		a.sort(tools.order()); // [ -1823, -2, 1, 1.23, 2, 3, 4, 23 ]
-
-	- Returns an alphabetically sorted array with (if available in the payload) the supplied argument being at zero index.
-	Any element starting with a special character provided in the constant below is also considered less important
-	and put at the end of the array. The algorithm also ignores any whitespace present within an element in the array.
-
-		let a = [ 'zenit', '*star', '-Artichoke', 'Arsenal', 'Chelsea', ' Alo ha' ];
-		a.sort(tools.order('zenit')); // [ 'zenit', ' Alo ha', 'Arsenal', 'Chelsea', '-Artichoke', '*star' ]
-
-	- Returns a sorted array that comprise a mixture of numbers and strings. It puts numbers first. 
-	Rules above about the supplied argument and the special characters apply here too.
-
-		let a = [ 3, 'zenit', '*star', 2, '-Artichoke', 45, -127388, 12303, 'Arsenal', 'Chelsea', 1, ' Alo ha', -1 ]
-		a.sort(tools.order('zenit')) // [ -127388, -1, 1, 2, 3, 45, 12303, 'zenit', ' Alo ha', 'Arsenal', 'Chelsea', '*star', '-Artichoke' ]
+	sorter.js - order();
 */
 
 const sC = ['.', ',', '.', '_', '*', '+', '&', '^', '/']; /* add || remove as necessary */
